@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: hsla(191, 75%, 60%, 1);
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#galleryheading{
+    font-size: 45px;
+    color: rgb(255, 53, 83);
+}
+#imagescontainer{
+    width: 90%;
+    height: 500px;
+    background-color: darksalmon;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+#imagesinconatiner{
+    width: 200px;
+    height: 150px;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+#imagesinconatiner:hover{
+    transform: scale(1.2);
+}
+#imageeditselection{
+    width: 70%;
+    height: 500px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#closebutton{
+    width:50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+    left: 400px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#imageselectedcontainer{
+    width: 100%;
+    height: 80%;
+    /* background-color: chocolate; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#editbutton{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(209, 119, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    letter-spacing: 10px;
+    color: white;
+}
+#imageselected{
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+
+/* imageditorcss */
+
+
+#editwindow{
+    width: 90%;
+    height: 90vh;
+    background-color: rgb(154, 65, 236);
+    display: none;
+}
+#imagecontainer{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(156, 156, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+#editor{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(236, 148, 148);
+    display: flex;
+
+    flex-direction: row;
+}
+#imagefilter{
+    width: 49%;
+    height: 100%;
+    background-color: rgb(124, 209, 255);
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+#transformimage{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 0, 255);
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.imagefilter{
+    width: 100%;
+    height: 10%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 80%;
+}
+#image{
+    filter: blur()brightness()contrast()grayscale()hue-rotate()invert()opacity()saturate();
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+
+
+
+
+
+
+
+
+
